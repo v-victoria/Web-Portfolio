@@ -29,20 +29,23 @@
     <link rel="stylesheet" href="/fonts/MyFontsWebfontsKit.css" />
   </head>
   <body>
-    <div class="homegage">
+    <div class="homepage">
       <div class="theme-switch">
         <label class="switch">
           <input type="checkbox" />
           <span class="slider round"></span>
         </label>
-        <span class="theme-text">Night</span>
+        <span class="theme-text ps-2">Night</span>
       </div>
       <div>
-        <h2>Hello, my name is <span class="name">Victoria</span>.</h2>
-        <h1>
-          I'm a <span class="profession">Front-end Developer</span> based in
-          England.
-        </h1>
+        <div>
+          <h1>Hello, my name is <span class="name">Victoria</span>.</h1>
+          <h2>
+            I'm a <span class="profession">Front-end Developer</span>
+            <br />
+            based in England.
+          </h2>
+        </div>
         <img
           src="/svg/homepage-img.svg"
           alt="homegage girl picture"
@@ -50,5 +53,32 @@
         />
       </div>
     </div>
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">VM</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" href="#">About me</a>
+            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link">Contacts</a>
+          </div>
+        </div>
+      </div>
+    </nav>
   </body>
 </html>

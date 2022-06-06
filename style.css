@@ -13,12 +13,38 @@ body {
   font-family: "CynthoPro-Regular", Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.name,
+.profession,
+.navbar-brand,
+.active {
+  font-family: "AlbulaPro-Bold", Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .homepage {
-  min-height: 105vh;
+  min-height: 101vh;
+  padding: 40px 80px;
+}
+
+.theme-switch {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3.33vw;
+}
+
+h2 {
+  font-size: 4.63vw;
 }
 
 .homepage-img {
   width: 38vw;
+  position: absolute;
+  top: 50%;
+  right: 80px;
+  margin-top: -20vw;
 }
 
 /* The switch - the box around the slider */
@@ -74,9 +100,30 @@ input:checked + .slider:before {
 
 .name {
   color: var(--first-accent-color);
-  font-family: "AlbulaPro-Bold", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3.07vw;
 }
 
 .profession {
-  font-family: "AlbulaPro-Bold", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 4.35vw;
 }
+.navbar-brand {
+  /* font-size: 25px; */
+  color: var(--main-text-color) !important;
+  padding: 10px 10px 6px 10px;
+  border: 2px solid var(--main-text-color);
+  border-radius: 4px;
+  margin-left: 68px;
+}
+
+.navbar-nav {
+  margin-right: 38px;
+}
+
+.nav-link {
+  margin: 0 12px;
+  color: var(--main-text-color) !important;
+}
+
+/* .active {
+  color: var(--first-accent-color);
+} */
