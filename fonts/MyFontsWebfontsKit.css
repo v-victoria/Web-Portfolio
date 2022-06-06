@@ -1,0 +1,75 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 5040362, 2022-06-02T06:09:24-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: CynthoPro-Italic by Mint Type
+ * URL: https://www.myfonts.com/fonts/konstantynov/cyntho-pro-inactive/italic/
+ * Copyright: Copyright (c) 2012 by Andriy Konstantynov. All rights reserved.
+ * 
+ * Webfont: CynthoPro-Regular by Mint Type
+ * URL: https://www.myfonts.com/fonts/konstantynov/cyntho-pro-inactive/regular/
+ * Copyright: Copyright (c) 2012 by Andriy Konstantynov. All rights reserved.
+ * 
+ * Webfont: CynthoNext-LightItalic by Mint Type
+ * URL: https://www.myfonts.com/fonts/konstantynov/cyntho-next/light-italic/
+ * Copyright: (c) Andriy Konstantynov, 2013-2019
+ * 
+ * Webfont: CynthoNext-Light by Mint Type
+ * URL: https://www.myfonts.com/fonts/konstantynov/cyntho-next/light/
+ * Copyright: (c) Andriy Konstantynov 2013-2019
+ * 
+ * Webfont: Inerta-Light by Mint Type
+ * URL: https://www.myfonts.com/fonts/konstantynov/inerta/light/
+ * Copyright: (c) Andriy Konstantynov,  2021
+ * 
+ * Webfont: Inerta-LightItalic by Mint Type
+ * URL: https://www.myfonts.com/fonts/konstantynov/inerta/light-italic/
+ * Copyright: (c) Andriy Konstantynov,  2021
+ * 
+ * Webfont: AlbulaPro-Bold by Serpentype
+ * URL: https://www.myfonts.com/fonts/serpentype/albula-pro/bold/
+ * Copyright: Copyright © 2018 by Silvio Meier. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2022 MyFonts Inc
+*/
+
+
+
+  
+@font-face {
+  font-family: "CynthoPro-Regular";
+  src: url('webFonts/CynthoProRegular/font.woff2') format('woff2'), url('webFonts/CynthoProRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Inerta-LightItalic";
+  src: url('webFonts/InertaLightItalic/font.woff2') format('woff2'), url('webFonts/InertaLightItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "CynthoNext-Light";
+  src: url('webFonts/CynthoNextLight/font.woff2') format('woff2'), url('webFonts/CynthoNextLight/font.woff') format('woff');
+}
+@font-face {
+  font-family: "CynthoPro-Italic";
+  src: url('webFonts/CynthoProItalic/font.woff2') format('woff2'), url('webFonts/CynthoProItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "AlbulaPro-Bold";
+  src: url('webFonts/AlbulaProBold/font.woff2') format('woff2'), url('webFonts/AlbulaProBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Inerta-Light";
+  src: url('webFonts/InertaLight/font.woff2') format('woff2'), url('webFonts/InertaLight/font.woff') format('woff');
+}
+@font-face {
+  font-family: "CynthoNext-LightItalic";
+  src: url('webFonts/CynthoNextLightItalic/font.woff2') format('woff2'), url('webFonts/CynthoNextLightItalic/font.woff') format('woff');
+}
+
