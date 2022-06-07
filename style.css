@@ -14,9 +14,18 @@ body {
   color: var(--main-text-color);
 }
 
+h1 {
+  font-size: 3.33vw;
+  margin-bottom: 6.5vw;
+}
+
+h2 {
+  font-size: 4.63vw;
+  line-height: 123%;
+}
+
 .name,
 .profession,
-.navbar-brand,
 .active {
   font-family: "AlbulaPro-Bold", Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -37,16 +46,6 @@ body {
 
 .theme-text {
   font-size: 12px;
-}
-
-h1 {
-  font-size: 3.33vw;
-  margin-bottom: 6.5vw;
-}
-
-h2 {
-  font-size: 4.63vw;
-  line-height: 123%;
 }
 
 .homepage-center-block {
@@ -80,18 +79,9 @@ h2 {
   bottom: 2.08vw;
   font-size: 2.08vw;
   color: var(--main-gray-color);
-  -webkit-animation: 1s ease-out 5s infinite alternate jumping_arrow;
   animation: 1s ease-out 5s infinite alternate jumping_arrow;
 }
 
-@-webkit-keyframes jumping_arrow {
-  from {
-    bottom: 2.08vw;
-  }
-  to {
-    bottom: 3.5vw;
-  }
-}
 @keyframes jumping_arrow {
   from {
     bottom: 2.08vw;
@@ -152,19 +142,31 @@ h2 {
   }
 }
 
-.navbar {
-  position: sticky !important;
-}
+.navbar,
+.container-fluid,
 .navbar-brand {
-  color: var(--main-text-color) !important;
-  padding: 10px 10px 6px 10px;
-  border: 2px solid var(--main-text-color);
-  border-radius: 4px;
-  margin-left: 68px;
+  padding: 0;
+}
+
+.navbar {
+  box-shadow: 0px 7px 9px rgb(0 0 0 / 15%);
+}
+
+.logo {
+  width: 51px;
+  height: 48px;
+  display: inline-block;
+  margin-left: 3.5vw;
+
+  -webkit-mask: url(/svg/logo.svg) no-repeat 50% 50%;
+  mask: url(/svg/logo.svg) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: var(--main-text-color);
 }
 
 .navbar-nav {
-  margin-right: 38px;
+  margin-right: 2vw;
 }
 
 .nav-link {
@@ -173,37 +175,10 @@ h2 {
 }
 
 .skills {
-  min-height: 101vh;
+  min-height: 150vh;
 }
 
 /* THEME TONGGLE SWITCH */
-/* The switch - the box around the slider */
-/* .switch {
-  position: relative;
-  width: 48px;
-  height: 24px;
-  cursor: pointer;
-  background-color: var(--main-gray-color);
-  transition: 0.4s;
-  border-radius: 24px;
-}
-.slider {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-  left: 2px;
-  bottom: 2px;
-  background-color: var(--theme-highlight-color);
-  transition: 0.4s;
-  border-radius: 50%;
-}
-input:checked + .slider:before {
-  transform: translateX(24px);
-} */
-
-/* THEME TONGGLE SWITCH END*/
-
 input[type="checkbox"] {
   height: 0;
   width: 0;
@@ -241,3 +216,4 @@ input:checked + label:after {
 label:active:after {
   width: 30px;
 }
+/* THEME TONGGLE SWITCH END*/

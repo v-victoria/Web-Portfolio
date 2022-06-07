@@ -1,10 +1,9 @@
-// let windowWidth = Window.innerWidth;
-// let windowWHeight = Window.windowWHeight;
-// let homepageCenterBlock = document.querySelector(".homepage-center-block");
+let navbarElem = document.querySelector(".navbar");
 
-// if (windowWHeight > windowWidth) {
-//   console.log(homepageCenterBlock.style.display);
-//   homepageCenterBlock.style.display = "block";
-// } else {
-//   homepageCenterBlock.style.display = "flex";
-// }
+window.addEventListener("scroll", function (e) {
+  if (this.scrollY > window.innerHeight) {
+    navbarElem.classList.add("fixed-top");
+  } else {
+    navbarElem.classList.remove("fixed-top");
+  }
+});
