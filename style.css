@@ -171,8 +171,10 @@ h2 {
 }
 
 .nav-link {
-  margin: 0 12px;
+  margin: 0 20px;
   color: var(--main-text-color) !important;
+  padding: 0 !important;
+  height: 25px;
 }
 
 .skills {
