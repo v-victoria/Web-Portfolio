@@ -22,7 +22,10 @@ body {
 
 .homepage {
   min-height: 101vh;
-  padding: 40px 80px;
+  padding: 2.08vw 4.16vw;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
 }
 
 .theme-switch {
@@ -33,81 +36,44 @@ body {
 
 h1 {
   font-size: 3.33vw;
+  margin-bottom: 6.5vw;
 }
 
 h2 {
   font-size: 4.63vw;
+  line-height: 123%;
+}
+
+.homepage-center-block {
+  display: flex;
+  margin: auto 0;
+  justify-content: end;
+}
+
+.homepage-text-block {
+  position: absolute;
+  left: 0;
+  margin: 4.42vw 0 0 7.8vw;
 }
 
 .homepage-img {
   width: 38vw;
-  position: absolute;
-  top: 50%;
-  right: 80px;
-  margin-top: -20vw;
-}
-
-/* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 72px;
-  height: 36px;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--main-gray-color);
-  transition: 0.4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 30px;
-  width: 30px;
-  left: 3px;
-  bottom: 3px;
-  background-color: var(--theme-highlight-color);
-  transition: 0.4s;
-}
-
-input:checked + .slider:before {
-  transform: translateX(36px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 36px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
 }
 
 .name {
   color: var(--first-accent-color);
   font-size: 3.07vw;
+  margin-bottom: 5.2vw;
 }
 
 .profession {
   font-size: 4.35vw;
 }
+
+.navbar {
+  position: sticky !important;
+}
 .navbar-brand {
-  /* font-size: 25px; */
   color: var(--main-text-color) !important;
   padding: 10px 10px 6px 10px;
   border: 2px solid var(--main-text-color);
@@ -124,6 +90,53 @@ input:checked + .slider:before {
   color: var(--main-text-color) !important;
 }
 
-/* .active {
-  color: var(--first-accent-color);
-} */
+.skills {
+  min-height: 101vh;
+}
+
+/* THEME TONGGLE SWITCH */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 72px;
+  height: 36px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--main-gray-color);
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 3px;
+  bottom: 3px;
+  background-color: var(--theme-highlight-color);
+  transition: 0.4s;
+}
+input:checked + .slider:before {
+  transform: translateX(36px);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 36px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+/* THEME TONGGLE SWITCH END*/
