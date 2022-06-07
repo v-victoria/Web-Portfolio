@@ -24,25 +24,33 @@
       crossorigin="anonymous"
     ></script>
 
+    <script
+      src="https://kit.fontawesome.com/bafb3b92c2.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/fonts/MyFontsWebfontsKit.css" />
   </head>
   <body>
     <!-- Homepage -->
-    <div class="homepage">
+    <div class="homepage" id="home">
       <div class="theme-switch">
-        <label class="switch">
-          <input type="checkbox" />
+        <!-- <label class="switch">
           <span class="slider round"></span>
-        </label>
+        </label> -->
+        <input type="checkbox" id="switch" /><label for="switch"></label>
         <span class="theme-text ps-2">Night</span>
       </div>
       <div class="homepage-center-block">
         <div class="homepage-text-block">
           <h1>Hello, my name is <span class="name">Victoria</span>.</h1>
           <h2>
-            I'm a <span class="profession">Front-end Developer</span>
+            I'm a
+            <span class="profession text-underline-fist-color"
+              >Front-end Developer</span
+            >
             <br />
             based in England.
           </h2>
@@ -53,6 +61,7 @@
           class="homepage-img"
         />
       </div>
+      <a href="/#about-me"><i class="fa-solid fa-arrow-down-long"></i></a>
     </div>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md">
@@ -82,7 +91,11 @@
         </div>
       </div>
     </nav>
+
     <!-- Skills page -->
-    <div class="skills"></div>
+    <div class="skills" id="about-me"></div>
+    <!-- Script -->
+    <script src="/scripts/scripts.js"></script>
+    <script src="/scripts/theme.js"></script>
   </body>
 </html>
