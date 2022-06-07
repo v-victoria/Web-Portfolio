@@ -167,6 +167,7 @@ h2 {
 
 .navbar-nav {
   margin-right: 2vw;
+  align-self: flex-end;
 }
 
 .nav-link {
