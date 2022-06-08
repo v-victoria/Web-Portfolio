@@ -1,10 +1,11 @@
 function changeColorDark() {
   let themeTextElem = document.querySelector(".theme-text");
   let switchCheckboxElem = document.querySelector("#switch");
+  let navbarElem = document.querySelector(".navbar");
 
-  // console.log(switchCheckboxElem);
   switchCheckboxElem.checked = true;
   themeTextElem.innerHTML = "Light";
+  navbarElem.classList.add("navbar-dark");
 
   document.documentElement.style.setProperty("--main-text-color", "#fcfcfd");
   document.documentElement.style.setProperty("--theme-background", "#13293D");
@@ -15,10 +16,13 @@ function changeColorDark() {
 }
 function changeColorLight() {
   let themeTextElem = document.querySelector(".theme-text");
-  themeTextElem.innerHTML = "Night";
   let switchCheckboxElem = document.querySelector("#switch");
+  let navbarElem = document.querySelector(".navbar");
+
+  themeTextElem.innerHTML = "Night";
   switchCheckboxElem.checked = false;
-  console.log(switchCheckboxElem);
+  navbarElem.classList.remove("navbar-dark");
+
   document.documentElement.style.setProperty("--main-text-color", "#000000");
   document.documentElement.style.setProperty("--theme-background", "#fcfcfd");
   document.documentElement.style.setProperty(

@@ -25,8 +25,7 @@ h2 {
 }
 
 .name,
-.profession,
-.active {
+.profession {
   font-family: "AlbulaPro-Bold", Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -153,8 +152,8 @@ h2 {
 }
 
 .logo {
-  width: 51px;
-  height: 48px;
+  width: 48px;
+  height: 45px;
   display: inline-block;
   margin-left: 3.5vw;
 
@@ -171,13 +170,21 @@ h2 {
 }
 
 .nav-link {
-  margin: 0 12px;
+  margin: 0 16px;
   color: var(--main-text-color) !important;
+  padding: 4px 15px !important;
+  width: fit-content;
 }
 
-/* .active {
-  font-size: 15px;
-} */
+.active {
+  border: 1px solid var(--main-text-color);
+  border-radius: 4px;
+}
+
+.navbar-toggler {
+  margin-right: 3.5vw;
+  border: 1px solid var(--main-text-color);
+}
 
 .skills {
   min-height: 150vh;
