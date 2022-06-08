@@ -177,13 +177,15 @@ h2 {
 }
 
 .active {
-  border: 1px solid var(--main-text-color);
+  border: 1px solid var(--main-gray-color);
   border-radius: 4px;
 }
 
 .navbar-toggler {
   margin-right: 3.5vw;
-  border: 1px solid var(--main-text-color);
+  border: none;
+  width: 48px;
+  padding: 5px;
 }
 
 .skills {
