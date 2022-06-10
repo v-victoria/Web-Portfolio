@@ -24,8 +24,24 @@ h2 {
   line-height: 123%;
 }
 
+h3 {
+  font-size: 56px;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 40px;
+}
+
+h4 {
+  color: var(--second-accent-color);
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+h3,
+h4,
 .name,
-.profession {
+.profession,
+.more-info-btn {
   font-family: "AlbulaPro-Bold", Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -149,6 +165,7 @@ h2 {
 
 .navbar {
   box-shadow: 0px 7px 9px rgb(0 0 0 / 15%);
+  background: var(--theme-background);
 }
 
 .logo {
@@ -189,7 +206,70 @@ h2 {
 }
 
 .skills {
-  min-height: 150vh;
+  min-height: 100vh;
+  padding: 2.08vw 4.16vw;
+}
+.main-page-skills {
+  font-size: 36px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-page-skills li {
+  margin-bottom: 40px;
+}
+
+.main-page-skills li i {
+  color: var(--first-accent-color);
+  margin-right: 36px;
+}
+
+.main-page-skills p {
+  font-size: 20px;
+  font-family: "CynthoNext-LightItalic", Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 68px;
+}
+
+.main-page-skills a {
+  color: var(--main-text-color);
+}
+
+.expertise,
+.tools {
+  font-family: "CynthoNext-Light", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 130%;
+  margin-bottom: 30px;
+}
+
+.more-info-btn {
+  background-color: var(--theme-background);
+  margin: 30px 0 auto auto;
+  display: flex;
+  height: 75px;
+  width: 240px;
+  font-size: 22px;
+  color: var(--first-accent-color);
+  text-align: left;
+  padding: 7px 20px;
+  line-height: 28px;
+  border: 2px solid var(--first-accent-color);
+  border-radius: 4px;
+}
+
+.more-info-btn i {
+  position: relative;
+  align-self: center;
+  font-size: 40px;
+  color: var(--main-gray-color);
+}
+
+.portfolio {
+  min-height: 100vh;
 }
 
 /* THEME TONGGLE SWITCH */
