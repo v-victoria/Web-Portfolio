@@ -250,14 +250,17 @@ h4,
   font-size: 16px;
   color: var(--first-accent-color);
   text-align: left;
-  padding: 7px 20px;
+  padding: 0 20px;
   line-height: 22px;
   border: 2px solid var(--first-accent-color);
   border-radius: 4px;
 }
 
+.more-info-btn div {
+  align-self: center;
+}
+
 .more-info-btn i {
-  position: relative;
   align-self: center;
   font-size: 40px;
   color: var(--main-gray-color);
