@@ -209,29 +209,24 @@ h4,
   min-height: 100vh;
   padding: 2.08vw 4.16vw;
 }
-.main-page-skills {
-  font-size: 32px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
 
-.main-page-skills li {
+.main-skill-list {
+  font-size: 32px;
   margin-bottom: 40px;
 }
 
-.main-page-skills li i {
+.check-list-style {
   color: var(--first-accent-color);
-  margin-right: 36px;
+  margin-top: 6px;
+  font-size: 32px;
 }
 
-.main-page-skills p {
+.main-skill-list p {
   font-size: 16px;
   font-family: "CynthoNext-LightItalic", Verdana, Geneva, Tahoma, sans-serif;
-  margin-left: 65px;
 }
 
-.main-page-skills a {
+.main-skill-list a {
   color: var(--main-text-color);
 }
 
