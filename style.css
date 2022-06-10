@@ -33,7 +33,7 @@ h3 {
 
 h4 {
   color: var(--second-accent-color);
-  font-size: 30px;
+  font-size: 26px;
   margin-bottom: 15px;
 }
 
@@ -233,12 +233,17 @@ h4,
 .expertise,
 .tools {
   font-family: "CynthoNext-Light", Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 30px;
+  font-size: 26px;
   list-style: none;
   padding: 0;
   margin: 0;
   line-height: 130%;
   margin-bottom: 30px;
+}
+
+.expertise li,
+.tools li {
+  margin-bottom: 8px;
 }
 
 .more-info-btn {
@@ -264,6 +269,31 @@ h4,
   align-self: center;
   font-size: 40px;
   color: var(--main-gray-color);
+}
+
+@media (max-width: 900px) {
+  h3 {
+    font-size: 36px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  .check-list-style {
+    margin-top: 4px;
+    font-size: 18px;
+  }
+  .main-skill-list {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-left: 0;
+  }
+  .main-skill-list p {
+    font-size: 12px;
+  }
+  .expertise,
+  .tools {
+    font-size: 18px;
+  }
 }
 
 .portfolio {
