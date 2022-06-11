@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OIL PAINT SHOP</title>
+    <style>
+      body {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      h1,
+      .main_body,
+      .footer {
+        max-width: 1000px;
+        width: 98%;
+      }
+      h1 {
+        text-align: center;
+        margin: 10px auto 10px;
+        padding: 20px 0;
+        background: linear-gradient(0deg, #5b7db1 0%, #61a4bc 100%);
+        border-radius: 15px;
+        color: #f1ddbf;
+        box-shadow: 0px 5px 8px #2432478a;
+      }
+      img {
+        width: 100%;
+        border-radius: 60px;
+        border: 5px white solid;
+        max-width: 555px;
+        margin: 0 auto;
+        display: block;
+      }
+      p {
+        text-align: justify;
+      }
+      a {
+        font-size: 14px;
+        color: #5b7db1;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #61a4bc;
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: 25px auto 0;
+        padding: 15px 25px;
+        font-size: 18px;
+        background: #61a4bc;
+        border: 2px #5b7db1 solid;
+        color: white;
+        border-radius: 20px;
+        box-shadow: 0px 3px 8px #2432478a;
+      }
+      button:hover {
+        background: #5b7db1;
+        cursor: pointer;
+      }
+      hr {
+        margin-top: 20px;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        max-width: 200px;
+        min-width: 100px;
+        width: 100%;
+      }
+      li {
+        padding: 20px 0;
+        background: #5b7db1;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: white;
+        transition: background 200ms ease-in-out;
+        cursor: pointer;
+        box-shadow: 0px 3px 8px #2432478a;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      li:hover {
+        background: #61a4bc;
+      }
+      li#li_oli_paint {
+        color: #1a132f;
+      }
+      div#histori_info,
+      div#sources_info,
+      div#pigment_info,
+      div#contacts_info {
+        display: none;
+      }
+      .em-block {
+        font-weight: 550;
+        display: block;
+        margin: 20px 0 5px;
+      }
+      .main_body {
+        margin: 25px auto;
+        display: flex;
+      }
+      .menu {
+        width: inherit;
+        max-width: 200px;
+      }
+      .main_info {
+        max-width: 720px;
+        width: inherit;
+        margin: 0 0 0 20px;
+        background: #f7e2e2;
+        color: #1a132f;
+        border-radius: 15px;
+        align-self: stretch;
+        padding: 30px;
+        font-size: 16px;
+        line-height: 20px;
+        box-shadow: 0px 3px 8px #2432478a;
+      }
+      .img_contacts {
+        height: 180px;
+        object-fit: cover;
+        object-position: top;
+      }
+      .text_contacts {
+        text-align: center;
+      }
+      .footer {
+        text-align: center;
+        margin: auto auto 10px;
+        padding: 10px 0;
+        background: #f7e2e2;
+        border-radius: 15px;
+        box-shadow: 0px 3px 8px #2432478a;
+        font-size: 12px;
+        color: #1a132f;
+      }
+      .page_background {
+        background: #eee6da7e;
+        max-width: 1000px;
+        width: 80%;
+        border-radius: 10px;
+        margin: 0 auto;
+        padding: 1px;
+        min-height: 97vh;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page_background">
+      <h1>OIL PAINT SHOP 🎨</h1>
+
+      <div class="main_body">
+        <div class="menu">
+          <ul>
+            <li id="li_oli_paint">Oil paint</li>
+            <li id="li_histori">History</li>
+            <li id="li_sources">Sources</li>
+            <li id="li_pigment">Pigment</li>
+            <li id="li_contacts">Contacts</li>
+          </ul>
+        </div>
+
+        <div class="main_info">
+          <div id="oli_paint_info">
+            <img
+              src="https://artincontext.org/wp-content/uploads/2021/03/How-Long-Does-Oil-Paint-Take-to-Dry.jpg"
+            />
+            <p>
+              <strong>Oil paint</strong> is a type of slow-drying paint that
+              consists of particles of pigment suspended in a drying oil,
+              commonly linseed oil. The viscosity of the paint may be modified
+              by the addition of a solvent such as turpentine or white spirit,
+              and varnish may be added to increase the glossiness of the dried
+              oil paint film. Oil paints were first used in Asia as early as the
+              7th century AD and can be seen in examples of Buddhist paintings
+              in Afghanistan. Oil-based paints made their way to Europe by the
+              12th century and were used for simple decoration, but oil painting
+              did not begin to be adopted as an artistic medium there until the
+              early 15th century. Common modern applications of oil paint are in
+              finishing and protection of wood in buildings and exposed metal
+              structures such as ships and bridges. Its hard-wearing properties
+              and luminous colors make it desirable for both interior and
+              exterior use on wood and metal. Due to its slow-drying properties,
+              it has recently been used in paint-on-glass animation. The
+              thickness of the coat has considerable bearing on the time
+              required for drying: thin coats of oil paint dry relatively
+              quickly.
+            </p>
+          </div>
+
+          <div id="histori_info">
+            <h3>History</h3>
+            <p>
+              The technical history of the introduction and development of oil
+              paint, and the date of introduction of various additives (driers,
+              thinners) is still—despite intense research since the mid 19th
+              century—not well understood. The literature abounds with incorrect
+              theories and information: in general, anything published before
+              1952 is suspect. Until 1991 nothing was known about the organic
+              aspect of cave paintings from the Paleolithic era. Many
+              assumptions were made about the chemistry of the binders. Well
+              known Dutch-American artist Willem de Kooning is known for saying
+              "Flesh is the reason oil paint was invented".
+              <em class="em-block">First recorded use</em>
+              The oldest known oil paintings are Buddhist murals created circa
+              650 AD. The works are located in cave-like rooms carved from the
+              cliffs of Afghanistan's Bamiyan Valley, "using walnut and poppy
+              seed oils."
+              <em class="em-block">Classical and medieval period</em>
+              Though the ancient Mediterranean civilizations of Greece, Rome,
+              and Egypt used vegetable oils, there is little evidence to
+              indicate their use as media in painting. Indeed, linseed oil was
+              not used as a medium because of its tendency to dry very slowly,
+              darken, and crack, unlike mastic and wax (the latter of which was
+              used in encaustic painting). Greek writers such as Aetius Amidenus
+              recorded recipes involving the use of oils for drying, such as
+              walnut, poppy, hempseed, pine nut, castor, and linseed. When
+              thickened, the oils became resinous and could be used as varnish
+              to seal and protect paintings from water. Additionally, when
+              yellow pigment was added to oil, it could be spread over tin foil
+              as a less expensive alternative to gold leaf. Early Christian
+              monks maintained these records and used the techniques in their
+              own artworks. Theophilus Presbyter, a 12th-century German monk,
+              recommended linseed oil but advocated against the use of olive oil
+              due to its long drying time. Oil paint was mainly used as it is
+              today in house decoration, as a tough waterproof cover for exposed
+              woodwork, especially outdoors. In the 13th century, oil was used
+              to detail tempera paintings. In the 14th century, Cennino Cennini
+              described a painting technique utilizing tempera painting covered
+              by light layers of oil. The slow-drying properties of organic oils
+              were commonly known to early painters. However, the difficulty in
+              acquiring and working the materials meant that they were rarely
+              used (and indeed the slow drying was seen as a disadvantage).
+            </p>
+            <a
+              href="https://en.wikipedia.org/wiki/Oil_paint#:~:text=Oil%20paint%20is%20a%20type,the%20dried%20oil%20paint%20film."
+              target="_blank"
+              >Read more on Wikipedia</a
+            >
+          </div>
+
+          <div id="sources_info">
+            <h3>Sources</h3>
+            <p>
+              The earliest and still most commonly used vehicle is
+              <strong>linseed oil</strong>, pressed from the seed of the flax
+              plant. Modern processes use heat or steam to produce refined
+              varieties of oil with fewer impurities, but many artists prefer
+              cold-pressed oils. Other vegetable oils such as hemp, poppy seed,
+              walnut, sunflower, safflower, and soybean oils may be used as
+              alternatives to linseed oil for a variety of reasons. For example,
+              safflower and poppy oils are paler than linseed oil and allow for
+              more vibrant whites straight from the tube.
+            </p>
+            <img
+              src="https://post.healthline.com/wp-content/uploads/2020/05/flax-seed-flaxseed-oil-732x549-thumbnail-732x549.jpg"
+              alt="linseed oil"
+            />
+            <hr />
+            <h3>Extraction methods and processing</h3>
+            <p>
+              Once the oil is extracted, additives are sometimes used to modify
+              its chemical properties. In this way, the paint can be made to dry
+              more quickly (if that is desired), or to have varying levels of
+              gloss, like Liquin. Modern oils paints can, therefore, have
+              complex chemical structures; for example, affecting resistance to
+              UV. By hand, the process involves first mixing the paint pigment
+              with the linseed oil to a crumbly mass on a glass or marble slab.
+              Then, a small amount at a time is ground between the slab and a
+              glass Muller (a round, flat-bottomed glass instrument with a
+              handgrip). Pigment and oil are ground together 'with patience'
+              until a smooth, ultra-fine paste is achieved. This paste is then
+              placed into jars or metal paint tubes and labeled.
+            </p>
+          </div>
+
+          <div id="pigment_info">
+            <h3>Pigment</h3>
+            <p>
+              The color of oil paint is derived from small particles of colored
+              pigments mixed with the carrier, the oil. Common pigment types
+              include mineral salts such as white oxides: zinc oxide, titanium
+              dioxide, and the red to yellow cadmium pigments. Another class
+              consists of earth types, the main ones being ochre, sienna and
+              umber. Still another group of pigments comes from living
+              organisms, such as madder root. Synthetic organic pigments are
+              also now available. Natural pigments have the advantage of being
+              well understood through centuries of use, but synthetics have
+              greatly increased the spectrum of available colors, and many have
+              attained a high level of lightfastness. When oil paint was first
+              introduced in the arts, basically the same limited range of
+              available pigments were used that had already been applied in
+              tempera: yellow ochre, umber, lead-tin-yellow, vermilion, kermes,
+              azurite, ultramarine, verdigris, lamp black and lead white. These
+              pigments strongly varied in price, transparency, and
+              lightfastness. They included both inorganic and organic
+              substances, the latter often being far less permanent. The painter
+              bought them from specialized traders, "color men", and let his
+              apprentices grind them with oil in his studio to obtain paint of
+              the desired viscosity. During the Age of discovery, new pigments
+              became known in Europe, most of the organic and earthy type, such
+              as Indian yellow. In the eighteenth century, the developing
+              science of chemistry deliberately tried to expand the range of
+              pigments, which led to the discovery of Prussian blue and cobalt
+              blue.
+            </p>
+            <img
+              src="https://www.european-coatings.com/-/media/LA/Redaktion/Rohstoffe/Pigmente_Ruslan-Gilmanshin-Adobe.jpg?bc=White&as=0&h=1199&w=3000&la=en&hash=AE87EBBE786944E0F3F22C9A64E4146E"
+              alt="pigment"
+            />
+          </div>
+
+          <div id="contacts_info">
+            <h3 class="text_contacts">
+              In our shop you can buy any colors and sets of oil paints
+            </h3>
+            <img
+              src="https://acrylgiessen.com/wp-content/uploads/2021/06/how-long-does-oil-paint-take-to-dry.jpg"
+              alt="paint"
+              class="img_contacts"
+            />
+            <p class="text_contacts">
+              Leave your email and we will contact you:
+            </p>
+            <button>Order paints</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer">Coded by Victoria Martynenko</div>
+    </div>
+    <script>
+      let liElements = document.querySelectorAll("li");
+
+      let oliPaintInfo = document.getElementById("oli_paint_info");
+      let historiInfo = document.getElementById("histori_info");
+      let sourcesInfo = document.getElementById("sources_info");
+      let pigmentInfo = document.getElementById("pigment_info");
+      let contactsInfo = document.getElementById("contacts_info");
+
+      let liOliPaint = document.getElementById("li_oli_paint");
+      let liHistori = document.getElementById("li_histori");
+      let liSources = document.getElementById("li_sources");
+      let liPigment = document.getElementById("li_pigment");
+      let liContacts = document.getElementById("li_contacts");
+
+      function resetMainInfo() {
+        oliPaintInfo.style.display = "none";
+        historiInfo.style.display = "none";
+        sourcesInfo.style.display = "none";
+        pigmentInfo.style.display = "none";
+        contactsInfo.style.display = "none";
+      }
+
+      function resetLiColor() {
+        liOliPaint.style.color = "white";
+        liHistori.style.color = "white";
+        liSources.style.color = "white";
+        liPigment.style.color = "white";
+        liContacts.style.color = "white";
+      }
+      function changeMainInfo(currentLi) {
+        let idValue = currentLi.target.getAttribute("id");
+
+        if (idValue === "li_oli_paint") {
+          resetMainInfo();
+          resetLiColor();
+          oliPaintInfo.style.display = "block";
+          currentLi.target.style.color = "#1a132f";
+        }
+        if (idValue === "li_histori") {
+          resetMainInfo();
+          resetLiColor();
+          historiInfo.style.display = "block";
+          currentLi.target.style.color = "#1a132f";
+        }
+        if (idValue === "li_sources") {
+          resetMainInfo();
+          resetLiColor();
+          sourcesInfo.style.display = "block";
+          currentLi.target.style.color = "#1a132f";
+        }
+        if (idValue === "li_pigment") {
+          resetMainInfo();
+          resetLiColor();
+          pigmentInfo.style.display = "block";
+          currentLi.target.style.color = "#1a132f";
+        }
+        if (idValue === "li_contacts") {
+          resetMainInfo();
+          resetLiColor();
+          contactsInfo.style.display = "block";
+          currentLi.target.style.color = "#1a132f";
+        }
+      }
+
+      liElements.forEach(function (liElement, index) {
+        liElement.addEventListener("click", changeMainInfo);
+      });
+
+      function askForContacts() {
+        let name = prompt("What is you name?");
+        let email = prompt("Enter you email");
+
+        if (name != "" && email != "") {
+          alert("Thank you " + name + "! We will contact you soon");
+        } else {
+          alert("You haven't entered all the infomation. Try again");
+        }
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", askForContacts);
+    </script>
+  </body>
+</html>

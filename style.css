@@ -25,32 +25,52 @@ h2 {
 }
 
 h3 {
-  font-size: 48px;
+  font-size: 2.5vw;
   text-align: center;
-  margin-top: 100px;
   margin-bottom: 40px;
 }
 
 h4 {
   color: var(--second-accent-color);
-  font-size: 26px;
+  font-size: 1.35vw;
   margin-bottom: 15px;
+}
+
+h5 {
+  font-size: 2.9vw;
+  color: var(--first-accent-color);
+  margin-bottom: 2.6vw;
+}
+h6 {
+  font-size: 1vw;
+  margin-bottom: 0.53vw;
+  font-family: "CynthoNext-Light", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h3,
 h4,
+h5,
 .name,
 .profession,
-.more-info-btn {
+.more-info-btn,
+.launch-project-link,
+.project-info-link {
   font-family: "AlbulaPro-Bold", Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.skills,
+.portfolio {
+  min-height: 100vh;
+  padding: 96px 4.16vw;
+}
+
+/* Homepage */
 .homepage {
   min-height: 100vh;
+  height: fit-content;
   padding: 2.08vw 4.16vw;
   display: flex;
   flex-direction: column;
-  height: fit-content;
 }
 
 .theme-switch {
@@ -97,6 +117,7 @@ h4,
   animation: 1s ease-out 5s infinite alternate jumping_arrow;
 }
 
+/* Arrow animation */
 @keyframes jumping_arrow {
   from {
     bottom: 2.08vw;
@@ -106,6 +127,7 @@ h4,
   }
 }
 
+/* Underline hover text "Front-end Developer" */
 .text-underline-fist-color {
   background-size: 0;
   transition: background-size 250ms ease-in-out;
@@ -123,40 +145,7 @@ h4,
   background-size: 100%;
 }
 
-@media screen and (orientation: portrait) {
-  h1 {
-    font-size: 5vw;
-  }
-  h2 {
-    font-size: 6.5vw;
-  }
-  .name {
-    font-size: 4.6vw;
-  }
-
-  .profession {
-    font-size: 6vw;
-  }
-  .homepage-center-block {
-    display: flex;
-    flex-direction: column;
-  }
-  .homepage-text-block {
-    position: static;
-    margin: 0;
-    text-align: center;
-  }
-  .homepage-img {
-    width: auto;
-    max-width: 90%;
-    margin: 5vh auto;
-    max-height: 50vh;
-  }
-  .homepage i {
-    font-size: 2.08vh;
-  }
-}
-
+/* Navbar */
 .navbar,
 .container-fluid,
 .navbar-brand {
@@ -209,24 +198,20 @@ h4,
   height: 61px;
 }
 
-.skills {
-  min-height: 100vh;
-  padding: 2.08vw 4.16vw;
-}
-
+/* About-me page */
 .main-skill-list {
-  font-size: 32px;
-  margin-bottom: 40px;
+  font-size: 1.7vw;
+  margin-bottom: 2vw;
 }
 
 .check-list-style {
   color: var(--first-accent-color);
   margin-top: 6px;
-  font-size: 32px;
+  font-size: 1.7vw;
 }
 
 .main-skill-list p {
-  font-size: 16px;
+  font-size: 1vw;
   font-family: "CynthoNext-LightItalic", Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -237,7 +222,7 @@ h4,
 .expertise,
 .tools {
   font-family: "CynthoNext-Light", Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 26px;
+  font-size: 1.35vw;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -247,22 +232,22 @@ h4,
 
 .expertise li,
 .tools li {
-  margin-bottom: 8px;
+  margin-bottom: 0.5vw;
 }
 
 .more-info-btn {
   background-color: var(--theme-background);
   margin: 30px 0 auto auto;
   display: flex;
-  height: 60px;
-  width: 200px;
-  font-size: 16px;
+  width: 12.5vw;
+  height: 3.9vw;
+  font-size: 1vw;
   color: var(--first-accent-color);
   text-align: left;
-  padding: 0 20px;
-  line-height: 22px;
+  padding: 0 1vw;
+  line-height: 150%;
   border: 2px solid var(--first-accent-color);
-  border-radius: 4px;
+  border-radius: 0.62vw;
 }
 
 .more-info-btn div {
@@ -271,37 +256,85 @@ h4,
 
 .more-info-btn i {
   align-self: center;
-  font-size: 40px;
+  font-size: 2vw;
   color: var(--main-gray-color);
 }
 
-@media (max-width: 900px) {
-  h3 {
-    font-size: 36px;
-  }
-  h4 {
-    font-size: 18px;
-  }
-  .check-list-style {
-    margin-top: 4px;
-    font-size: 18px;
-  }
-  .main-skill-list {
-    font-size: 18px;
-    margin-bottom: 20px;
-    padding-left: 0;
-  }
-  .main-skill-list p {
-    font-size: 12px;
-  }
-  .expertise,
-  .tools {
-    font-size: 18px;
-  }
+/* Projects page */
+.portfolio-title {
+  font-size: 1.24vw;
 }
 
-.portfolio {
+.portfolio-title-description {
+  font-size: 2.9vw;
+  text-align: center;
+}
+
+.project-row {
   min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.project-img {
+  width: 45vw;
+  height: 27vw;
+  border-radius: 1.25vw 1.25vw 0.62vw 0.62vw;
+  filter: drop-shadow(0px 0.62vw 0.62vw rgba(0, 0, 0, 0.25));
+  align-self: center;
+}
+
+.project-info {
+  width: 35vw;
+  align-self: center;
+}
+
+.project-description,
+.tech-features {
+  font-size: 1.87vw;
+  line-height: 130%;
+}
+.project-description {
+  margin-bottom: 1.56vw;
+}
+.tech-features {
+  margin-bottom: 2.6vw;
+  color: var(--second-accent-color);
+}
+.project-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.launch-project-link,
+.project-info-link {
+  width: 12.5vw;
+  height: 3.9vw;
+  border: 2px solid var(--first-accent-color);
+  border-radius: 0.62vw;
+  font-size: 1.14vw;
+  text-decoration: none;
+  text-align: center;
+  padding: 1vw;
+}
+.launch-project-link {
+  background: var(--first-accent-color);
+  color: var(--footer-text-color);
+}
+.launch-project-link:hover {
+  color: var(--footer-text-color);
+}
+.project-info-link {
+  background: var(--theme-background);
+  color: var(--first-accent-color);
+}
+.project-info-link:hover {
+  color: var(--first-accent-color);
+}
+.project-links i {
+  font-size: 3.9vw;
+  color: var(--first-accent-color);
 }
 
 /* THEME TONGGLE SWITCH */
@@ -343,3 +376,137 @@ label:active:after {
   width: 30px;
 }
 /* THEME TONGGLE SWITCH END*/
+
+/* Homepage portrait orientation screen responsive */
+@media screen and (orientation: portrait) {
+  h1 {
+    font-size: 5vw;
+  }
+  h2 {
+    font-size: 6.5vw;
+  }
+  .name {
+    font-size: 4.6vw;
+  }
+
+  .profession {
+    font-size: 6vw;
+  }
+  .homepage-center-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .homepage-text-block {
+    position: static;
+    margin: 0;
+    text-align: center;
+  }
+  .homepage-img {
+    width: auto;
+    max-width: 90%;
+    margin: 5vh auto;
+    max-height: 50vh;
+  }
+  .homepage i {
+    font-size: 2.08vh;
+  }
+}
+
+@media (max-width: 900px) {
+  h3 {
+    font-size: 36px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 30px;
+    margin-bottom: 2.6vw;
+  }
+  h6 {
+    display: none;
+  }
+  .check-list-style {
+    margin-top: 4px;
+    font-size: 18px;
+  }
+  .main-skill-list {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-left: 0;
+  }
+  .main-skill-list p {
+    font-size: 12px;
+  }
+  .expertise,
+  .tools {
+    font-size: 18px;
+  }
+
+  .portfolio-title {
+    font-size: 16px;
+  }
+
+  .portfolio-title-description {
+    font-size: 20px;
+  }
+  .project-row {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project-img {
+    width: 90vw;
+    height: 54vw;
+    border-radius: 12px 12px 6px 6px;
+    filter: drop-shadow(0px 0.62vw 0.62vw rgba(0, 0, 0, 0.25));
+  }
+
+  .project-info {
+    margin-top: 40px;
+    width: 90vw;
+  }
+
+  .project-description,
+  .tech-features {
+    font-size: 18px;
+  }
+  .project-description {
+    margin-bottom: 15px;
+  }
+  .tech-features {
+    margin-bottom: 30px;
+  }
+  .project-links {
+    justify-content: flex-start;
+  }
+
+  .launch-project-link,
+  .project-info-link {
+    width: 140px;
+    height: 42px;
+    border-radius: 6px;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 20px;
+  }
+
+  .project-links i {
+    font-size: 42px;
+  }
+  .skills,
+  .portfolio,
+  .project-row {
+    min-height: fit-content;
+  }
+}
+
+@media (max-width: 550px) {
+  .project-links {
+    justify-content: space-between;
+  }
+  .launch-project-link,
+  .project-info-link {
+    margin-right: 0;
+  }
+}
