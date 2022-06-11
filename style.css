@@ -56,7 +56,8 @@ h5,
 }
 
 .skills,
-.portfolio {
+.portfolio,
+.contacts {
   min-height: 100vh;
   padding: 96px 4.16vw;
 }
