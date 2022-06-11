@@ -407,6 +407,11 @@ label:active:after {
   .homepage i {
     font-size: 2.08vh;
   }
+  .skills,
+  .portfolio,
+  .project-row {
+    min-height: fit-content;
+  }
 }
 
 @media (max-width: 900px) {
@@ -489,11 +494,6 @@ label:active:after {
 
   .project-links i {
     font-size: 42px;
-  }
-  .skills,
-  .portfolio,
-  .project-row {
-    min-height: fit-content;
   }
 }
 
