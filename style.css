@@ -340,6 +340,10 @@ h5,
   text-align: center;
   font-size: 1.7vw;
 }
+.get-in-touch {
+  position: relative;
+  top: 3px;
+}
 
 .get-in-touch p {
   color: var(--main-text-color);
