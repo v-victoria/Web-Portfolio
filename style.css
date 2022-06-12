@@ -400,7 +400,6 @@ h5,
   display: inline-flex;
 }
 .contact-icons img {
-  width: 2.7vw;
   height: 3.6vw;
 }
 
@@ -490,20 +489,21 @@ label:active:after {
   /* Contacts */
 
   .contacts {
-    font-size: 1.7vh;
+    font-size: 2vh;
   }
   .email-info {
-    font-size: 2.9vh;
+    font-size: 4vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
   .contact-icons a {
-    font-size: 4vh;
+    font-size: 5vh;
   }
   .contact-icons img {
-    width: 2.7vh;
-    height: 3.6vh;
+    height: 4.5vh;
   }
   .coryright {
-    font-size: 1.3vh;
+    font-size: 1.5vh;
   }
 }
 
